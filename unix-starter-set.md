@@ -325,7 +325,7 @@ a six frequently but all of them over the course of a month.
 
 #### Text editors
 
-+ [nano](http://en.wikipedia.org/wiki/Nano_(text_editor)) (a simple text editor found on most Linux systems and some Macs)
++ [nano](http://en.wikipedia.org/wiki/Nano_\(text_editor\)) (a simple text editor found on most Linux systems and some Macs)
 + [vi](http://en.wikipedia.org/wiki/Vi) (vi one of the original Unix text editors, on almost all systems)
 + [emacs](http://en.wikipedia.org/wiki/Emacs) (an early Unix text editors, on almost all Linux systems)
 

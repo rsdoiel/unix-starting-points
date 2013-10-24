@@ -1,4 +1,3 @@
-
 # Four Unix Concepts
  
 Unix is a handy thing to know if you work on the web.  So much of the internet was built from it. Even on a Mac you have
@@ -7,8 +6,8 @@ Unix (a flavor if it) under the hood. There are three kep concepts
 1. Files
 2. Programs and Processes
 3. Pipes
-4. Environment
-5. Permissions
+4. Permissions
+5. Regular Expressions (RegExp)
 
 ## Files
 
@@ -237,6 +236,30 @@ We use the following Unix commands to manage file permissions--
 + [chown](http://en.wikipedia.org/wiki/Chmod)
 + [chgrp](http://en.wikipedia.org/wiki/Chgrp)
 
+### Common modulos (permissions)
+
+A file's modulo sets it permissions. This is old hackery.  You can learn
+the hex or just memorize a couple of numbers.  Here's some examples
+
++ 664 (ug=rw,o=r) On files allows owners/groups to read, write and others only read
++ 775 (ug=rwx,o=rx) On folders it allows the group/owners to read, write, pass through and others to just read or pass through
++ 775 (ug=rwx,o=rx) On files it allows the group/owners to read, write, execute and others only read and execute
++ 660 (ug=rw) On files it restricts reading and write to the owner/group
++ 770 (ug=rwx) On files it restricts reading, writing and executing to the group
++ 770 (ug=rwx) On folders it restrcts reading, writing and passing through to the group
+
+These are the most common permissions you'll see in a web tree.
+
+# Regular Expressions
+
+Unix commands can usually take advantage of regular expressions.  This lets you do thing like
+"search for words beginning with apple" or "lines ending with a period". Regular experssions
+can be a big subject.  You'll want a better writer than me to explain it.  
+[Web Platform](http://docs.webplatform.org/wiki/concepts/programming/javascript/regex)
+and [Mozilla's MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) 
+Developer site are probably a good place to dive into this.
+
+
 
 # A paragraph about Shells
 
@@ -289,7 +312,6 @@ a six frequently but all of them over the course of a month.
 + [ssh](http://en.wikipedia.org/wiki/Secure_Shell) (secure shell to access remote systems safely)
 + [scp](http://en.wikipedia.org/wiki/Secure_Copy) (secure copy to copy content to/from remote systems safely)
 + [ssh-keygen](http://en.wikipedia.org/wiki/Ssh-keygen) (generate a private/public key pair for make access easier)
-+ [sed](http://en.wikipedia.org/wiki/Sed) (stream editor, handy if you need to cleanup files line by line)
 + [bash](http://en.wikipedia.org/wiki/Bash_(Unix_shell) (Bourne Again Shell, nice to script though a little idiosyncratic), also see [Aliens Bash Tutorial](http://subsignal.org/doc/AliensBashTutorial.html)
 + [echo](http://en.wikipedia.org/wiki/Echo_(command)) (display a line of text to standard out)
 + [mysql](http://dev.mysql.com/doc/) and mysqldump (the command line client  and utility for MySQL relational database)
@@ -298,10 +320,14 @@ a six frequently but all of them over the course of a month.
 + [ps](http://en.wikipedia.org/wiki/Ps_(Unix)) (process status, lists the running processes)
 + [du](http://en.wikipedia.org/wiki/Du_(Unix)) (disc usage, reports on disc use for a path0
 + [passwd](http://en.wikipedia.org/wiki/Passwd) (changes your password)
++ [sudo](http://en.wikipedia.org/wiki/Sudo) (lets you become the administrator of the computer to run privilleged commands)
+
+
+#### Text editors
+
 + [nano](http://en.wikipedia.org/wiki/Nano_(text_editor)) (a simple text editor found on most Linux systems and some Macs)
 + [vi](http://en.wikipedia.org/wiki/Vi) (vi one of the original Unix text editors, on almost all systems)
 + [emacs](http://en.wikipedia.org/wiki/Emacs) (an early Unix text editors, on almost all Linux systems)
-+ [sudo](http://en.wikipedia.org/wiki/Sudo) (lets you become the administrator of the computer to run privilleged commands)
 
 ## Additional starting points
 

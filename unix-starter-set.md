@@ -1,7 +1,7 @@
 # Four Unix Concepts
  
 Unix is a handy thing to know if you work on the web.  So much of the internet was built from it. Even on a Mac you have
-Unix (a flavor if it) under the hood. There are three kep concepts
+Unix (a flavor if it) under the hood. There are several key concepts
 
 1. Files
 2. Programs and Processes
